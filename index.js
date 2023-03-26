@@ -38,8 +38,8 @@ app.post('/',function(req,res){
             const name = GSTdata.data.lgnm
             const status = GSTdata.data.dty
             console.log(GSTdata)
-            res.write("<h1>The name of the tax payer is "+name+"</h1>")
-            res.write("<p>The status of Tax payer is "+status+"</p>")
+            res.write("The name of the tax payer is "+name+"")
+            res.write("The status of Tax payer is "+status+"")
             res.send()
             
         })
