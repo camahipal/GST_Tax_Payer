@@ -18,7 +18,7 @@ app.use(express.static('public'))
 
 
 app.post('/',function(req,res){
-    const query =req.body.GST_noto.LocaleUpperCase()
+    const query =req.body.GST_no.toLocaleUpperCase()
     
     const options = {
         'method': 'GET',
